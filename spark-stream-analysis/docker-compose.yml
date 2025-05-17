@@ -77,8 +77,7 @@ services:
       - ./data:/opt/workspace/data
       - ./jars:/home/jovyan/jars
     command: >
-      bash -c "/opt/conda/bin/python -c 'import pyspark; print(\"PySpark is available\")' &&
-               /opt/conda/bin/python /home/jovyan/work/data_generator.py &
+      bash -c "/opt/conda/bin/python /home/jovyan/work/data_generator.py &
                sleep 15 &&
                /opt/conda/bin/python /home/jovyan/work/spark_streaming_to_postgres.py"
     healthcheck:

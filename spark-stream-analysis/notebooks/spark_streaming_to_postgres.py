@@ -54,7 +54,7 @@ try:
         .schema(schema) \
         .option("header", True) \
         .option("maxFilesPerTrigger", 1) \
-        .csv("/opt/workspace/data/")
+        .csv("/opt/workspace/data/*.csv")
     print("Input stream set up successfully.")
 except Exception as e:
     print(f"Error setting up input stream: {e}")

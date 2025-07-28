@@ -1,0 +1,3 @@
+__pycache__
+logs
+airflow/flight_airflow_analysis/.env
